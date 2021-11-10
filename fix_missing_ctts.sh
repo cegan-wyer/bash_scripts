@@ -21,7 +21,7 @@ do
             mkvmerge ${MKVMERGE_OPTS} -o "${TMP_DIR}${BASE_FILE}.mkv" "${FILE}"
 
             echo "Combining video stream from ${TMP_DIR}${BASE_FILE}.mkv with audio from ${FILE}"
-            ffmpeg -i "${FILE}" -i "${TMP_DIR}${BASE_FILE}.mkv" ${FFMPEG_OPTS} "${WORKING_DIR}${BASE_FILE}.fixed.mkv
+            ffmpeg -i "${FILE}" -i "${TMP_DIR}${BASE_FILE}.mkv" ${FFMPEG_OPTS} "${WORKING_DIR}${BASE_FILE}.fixed.mkv"
 
             echo "Moving ${FILE} to backup folder"
             mv -v "${FILE}" "${BACKUP_DIR}"
