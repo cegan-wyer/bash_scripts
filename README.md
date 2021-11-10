@@ -5,7 +5,7 @@ A collection of useful bash scripts that I have made.
 This script will look through a directory and all its subdirectories to locate any HEVC-encoded MP4 files that are missing the ctts atom.
 
 ### Variables
-- MEDIA_DIR - the folder that the script will search through.
+- MEDIA_DIR - the folder that the script will search through
 
 # fix_missing_ctts.sh
 This script will look through a directory and all its subdirectories to locate any HEVC-encoded MP4 files that are missing the ctts atom and then fix them using the following steps:
@@ -15,7 +15,7 @@ This script will look through a directory and all its subdirectories to locate a
 3. Move the old file into a backup folder
 
 ### Variables
-- MEDIA_DIR - the folder that the script will search through.
+- MEDIA_DIR - the folder that the script will search through
 - TMP_DIR - the temporary folder to use
 - BACKUP_DIR - the folder to put the original files in
 - MKVMERGE_OPTS - options to be passed into mkvmerge. Leave this alone if you don't know what you're doing.
